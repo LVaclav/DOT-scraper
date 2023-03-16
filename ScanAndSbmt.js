@@ -58,6 +58,7 @@ myIntervel = setInterval(function () {
           booking_time_24h > time_range_start &&
           booking_time_24h < time_range_end
         ) {
+          
           // let time_condition_met = true;
         }
       }
