@@ -6,6 +6,7 @@ myIntervel = setInterval(function () {
   try {
     //change 'id8' to 'idb' if you are using the change booking interface
     document.getElementById('id8').click();
+
     let state = document.getElementsByClassName('feedbackPanelERROR');
     let stateParsed = state[0].innerText;
     var noBook =

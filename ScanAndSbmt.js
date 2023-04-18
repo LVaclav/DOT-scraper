@@ -10,7 +10,6 @@ myIntervel = setInterval(function () {
     let stateParsed = state[0].innerText;
     var noBook =
       'Sorry, there are no bookings available for the date requested. Please alter your requested booking date and try again.';
-
     console.log('nada ' + current_time);
   } catch (err) {
     let booking = document.querySelectorAll('#searchResultRadioLabel');
@@ -42,10 +41,10 @@ myIntervel = setInterval(function () {
       //Define user properties
       //example values!!!
       let conditions = {
-        date_range_start: '01/2/2023',
-        date_range_end: '01/3/2023',
-        time_range_start: '8:30',
-        time_range_end: '14:50',
+        date_range_start: '01/4/2023',
+        date_range_end: '30/4/2023',
+        time_range_start: '6:00',
+        time_range_end: '22:30',
       };
       //user conditions met? Might not be neccessary
       // var date_condition_met = false;
@@ -58,9 +57,13 @@ myIntervel = setInterval(function () {
           booking_time_24h > time_range_start &&
           booking_time_24h < time_range_end
         ) {
-          
           // let time_condition_met = true;
+          alert('It would Book!!');
+        } else {
+          console.log('not a fit');
         }
+      } else {
+        console.log('not a fit');
       }
     }
   }
